@@ -67,8 +67,8 @@ class GameView:
 
         state_str = (f"Left: {state.missionaries_left}M "
                      f"{state.cannibals_left}C | "
-                     f"Right: {state.missionaries_right}M "
-                     f"{state.cannibals_right}C")
+                     f"Right: {state.missionaries_right()}M "
+                     f"{state.cannibals_right()}C")
         self.draw_text_with_bg(state_str, self.font_small, (10, 50))
 
         if not boat_is_moving:

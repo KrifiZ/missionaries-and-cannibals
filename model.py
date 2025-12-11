@@ -37,8 +37,8 @@ class GameState:
         c_left = self.cannibals_left
         if m_left > 0 and c_left > m_left:
             return False
-        m_right = self.missionaries_right
-        c_right = self.cannibals_right
+        m_right = self.missionaries_right()
+        c_right = self.cannibals_right()
         if m_right > 0 and c_right > m_right:
             return False
         return True

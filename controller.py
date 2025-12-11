@@ -167,8 +167,8 @@ class GameController:
 
         m_left = self.state.missionaries_left
         c_left = self.state.cannibals_left
-        m_right = self.state.missionaries_right
-        c_right = self.state.cannibals_right
+        m_right = self.state.missionaries_right()
+        c_right = self.state.cannibals_right()
 
         losing_side = None
         if m_left > 0 and c_left > m_left:
